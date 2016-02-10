@@ -33,3 +33,24 @@
 	position: absolute;
 	top: 30%;
 }
+
+.footer-container {
+	width: 100%;
+	position: absolute;
+	top: 95%;
+	border: 1px solid black;
+}
+
+.footer > p {
+	display: inline;
+    margin-right: 10px;
+}
+ .row.info {
+ 	margin-left: 1%;
+ 	margin-right:-12%;
+ 	margin-top: 2%;
+ }
+
+ .row.info > div {
+ 	border:2px solid black;
+ }
