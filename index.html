@@ -11,6 +11,7 @@
     <!-- Tema opcional -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flexslider.css">
 
     <!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
     <!-- script src="js/bootstrap.js"></script-->
@@ -22,75 +23,64 @@
          incluir archivos JavaScript individuales de los únicos
          plugins que utilices) -->
     <script src="bootstrap/js/bootstrap.min.js"></script> 
-
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop: true,
+            //controlNav: "thumbnails",
+            pauseOnHover: true,
+            slideshow: true, 
+          });
+    });
+      </script>
     <title>MANTICLINIC</title>
-
+    <style type="text/css">
+    .flex-caption {
+      width: 100%;
+      padding: 2%;
+      left: 0;
+      bottom: 0;
+      background: rgba(0,0,0,.5);
+      color: #fff;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+      font-size: 14px;
+      line-height: 18px;
+    }
+</style>
   </head>
 
   <body>
-    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Manticlinic.</a>
-        </div>
-      </div>
-    </nav> -->
-   <!--  <div class="banner">
-      <img alt="Manticlinic" style="width: 100%;" src="images/banner.jpg">
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <!--div class="jumbotron">
-      <div class="container">
-        <h1 style="padding-left: 33%;">MANTICLINIC</h1>
-        <p style="padding-left: 33%; FACE=courier">Ojito con el slogan</p>
-      </div>
-    </div>
-    </div> -->
-  
+
+     
     <div class="banner">
         <img src="images/banner.jpg" />
         <h2>
         MANTICLINIC<br />Ojito con el slogan
         </h2>
     </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row info">
-        <div class="col-md-3">
-          <h2>Quiénes somos</h2>
-          <p>La empresa fue creada en el año 2016 por un grupo de personajes que les apetecía tener más carga de trabajo y aquí estamos borja y yo para hacer la mejor página web del mundo ñañaña. </p>
-          <p><a class="btn btn-default" href="pages/who-we-are.html" role="button">Leer más »</a></p>
-        </div>
-        <div class="col-md-3">
-          <h2>Servicios</h2>
-          <p>Para poder ponerte en contacto con nosotros, puedes llamar al 1111111 o mandar un correo a dkfkjf@gmail.com. </p>
-          <p><a class="btn btn-default" href="pages/services.html" role="button">Leer más »</a></p>
-        </div>
-        <div class="col-md-3">
-          <h2>Contacto</h2>
-          <p>Para decirnos lo buena que es la página puedes venir a vernos a la calle jhbdfhf número 2 piso 56B, gracias.</p>
-          <p><a class="btn btn-default" href="pages/contact.html" role="button">Leer más »</a></p>
-        </div>
-        <div class="col-md-3">
-          <h2>Contacto</h2>
-          <p>Para decirnos lo buena que es la página puedes venir a vernos a la calle jhbdfhf número 2 piso 56B, gracias.</p>
-          <p><a class="btn btn-default" href="pages/contact.html" role="button">Leer más »</a></p>
-        </div>
-
+    <section class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li data-thumb="images/slider1-thumb.jpg">
+            <img src="images/slide1.jpg" />
+            <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+          </li>
+          <li data-thumb="images/slider2-thumb.jpg">
+            <img src="images/slide2.jpg" />
+            <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+          </li>
+          <li data-thumb="images/slider3-thumb.jpg">
+            <img src="images/slide3.jpg" />
+            <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+          </li>
+          <li data-thumb="images/slider4-thumb.jpg">
+            <img src="images/slide4.jpg" />
+            <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+          </li>
+        </ul>
       </div>
-    </div> <!-- /container -->
-    <div class="footer-container">
-      <footer class="footer">
-        <p>© 2016 Company, Inc.</p>
-        <p><a href="#">Terminos y Condiciones</a></p>
-        <p><a href="mailto:someone@example.com"> <span class="glyphicon glyphicon-envelope"></span>Contacto</a></p>
-      </footer>
-    </div>   
+    </section>
   </body>
 </html>
