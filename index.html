@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/footer-basic-centered.css">
+
 
     <!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
     <!-- script src="js/bootstrap.js"></script-->
@@ -42,11 +44,14 @@
       padding: 2%;
       left: 0;
       bottom: 0;
-      background: rgba(0,0,0,.5);
-      color: #fff;
+      background: rgba(8, 24, 82, 0.5);
+      color: #ccc;
       text-shadow: 0 -1px 0 rgba(0,0,0,.3);
       font-size: 14px;
       line-height: 18px;
+      position:relative;
+      bottom: 75px;
+      ;
     }
 </style>
   </head>
@@ -55,32 +60,66 @@
 
      
     <div class="banner">
-        <img src="images/banner.jpg" />
+        <!--<img src="images/banner.jpg" />-->
+        <img src="images/logo1.jpg" />
         <h2>
-        MANTICLINIC<br />Ojito con el slogan
+        MANTICLINIC<br />
         </h2>
+        <h3>
+        Ojito con el slogan
+        </h3>
     </div>
     <section class="slider">
-      <div class="flexslider">
-        <ul class="slides">
-          <li data-thumb="images/slider1-thumb.jpg">
-            <img src="images/slide1.jpg" />
-            <p class="flex-caption">Adventurer Cheesecake Brownie</p>
-          </li>
-          <li data-thumb="images/slider2-thumb.jpg">
-            <img src="images/slide2.jpg" />
-            <p class="flex-caption">Adventurer Cheesecake Brownie</p>
-          </li>
-          <li data-thumb="images/slider3-thumb.jpg">
-            <img src="images/slide3.jpg" />
-            <p class="flex-caption">Adventurer Cheesecake Brownie</p>
-          </li>
-          <li data-thumb="images/slider4-thumb.jpg">
-            <img src="images/slide4.jpg" />
-            <p class="flex-caption">Adventurer Cheesecake Brownie</p>
-          </li>
-        </ul>
-      </div>
+    	<div class="sldier-container">
+	      <div class="flexslider">
+	        <ul class="slides">
+	          <li data-thumb="images/slider1-thumb.jpg">
+	            <a href="pages/who-we-are.html">
+                <img src="images/slide1.jpg" />
+                <p class="flex-caption">Quiénes somos</p>
+              </a>
+	          </li>
+	          <li data-thumb="images/slider2-thumb.jpg">
+              <a href="pages/services.html">
+                <img src="images/slide2.jpg" />
+                <p class="flex-caption">Servicios</p>
+              </a>
+	          </li>
+	          <li data-thumb="images/slider3-thumb.jpg">
+              <a href="pages/contact.html">
+                <img src="images/slide3.jpg" />
+                <p class="flex-caption">Otros</p>
+              </a>
+            </li>
+	          <li data-thumb="images/slider4-thumb.jpg">
+              <a href="pages/contact.html">
+                <img src="images/slide4.jpg" />
+                <p class="flex-caption">Contacto</p>
+              </a>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
     </section>
+    <footer class="footer-basic-centered">
+
+      <p class="footer-company-motto">MANTICLINIC 2016</p>
+
+      <p class="footer-links">
+        <a href="pages/index.html">Home</a>
+        ·
+        <a href="pages/who-we-are.html">Quiénes somos</a>
+        ·
+        <a href="pages/services.html">Servicios</a>
+        ·
+        <a href="pages/contact.html">Otros</a>
+        ·       
+        <a href="pages/contact.html">Contacto</a>
+      </p>
+
+      <p class="footer-company-name">MANTICLINIC &copy; 2016</p>
+
+    </footer>
+
   </body>
 </html>
