@@ -1,6 +1,4 @@
-<html lang="en">
-
-  <head>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +11,12 @@
     <!-- Tema opcional -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" href="../css/footer-basic-centered.css">
+
+
+    <!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
+    <!-- script src="js/bootstrap.js"></script-->
 
     <!-- Librería jQuery requerida por los plugins de JavaScript -->
     <script src="../js/jquery-2.2.0.min.js"></script>
@@ -22,27 +26,67 @@
          plugins que utilices) -->
     <script src="../bootstrap/js/bootstrap.min.js"></script> 
 
-    <title>MANTICLINIC-Quienes somos</title>
-
+    <title>MANTICLINIC</title>
+    <style type="text/css">
+    .flex-caption {
+      width: 100%;
+      padding: 2%;
+      left: 0;
+      bottom: 0;
+      background: rgba(8, 24, 82, 0.5);
+      color: #ccc;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+      font-size: 14px;
+      line-height: 18px;
+      position:relative;
+      bottom: 75px;
+      ;
+    }
+</style>
   </head>
 
   <body>
 
+     
     <div class="banner">
-      <img src="../images/banner.jpg" />
-      <h2> MANTICLINIC <br />Ojito con el slogan </h2>
+        <!--<img src="images/banner.jpg" />-->
+        <img src="../images/logobueno2.png" />
+        <h2>
+        MANTICLINIC<br />
+        </h2>
+        <h3>
+        Quiénes somos
+        </h3>
     </div>
-    <div class="container">
-      <a href="javascript:window.history.back();"> Atras </a>
-      <h1>LLENAAAAR</h1>
-    </div>
-    <div class="footer-container">
-      <footer class="footer">
-        <p>© 2016 Company, Inc.</p>
-        <a href="#">Terminos y Condiciones</a>
-      </footer>
-    </div>
+   
 
-  
+   <div class="info-content"> 
+   <div class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur mauris vel nisi vulputate tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sit amet ex eu magna tempor facilisis lacinia quis dolor. Sed ut tristique est. Integer et ipsum ac leo pellentesque molestie. Ut at commodo nisi. Donec sit amet ornare dolor. Vestibulum euismod vitae odio consectetur efficitur.
 
-</body></html>
+      Suspendisse consectetur metus eget velit tristique dapibus. Phasellus laoreet, nunc nec viverra tempor, urna sapien bibendum mi, et accumsan risus purus a orci. Duis commodo consectetur risus, interdum laoreet odio scelerisque at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent placerat enim quam, in finibus ante ullamcorper id. Integer dignissim convallis ipsum, quis dictum ex interdum vitae. Ut leo felis, mattis ac mi eu, fermentum tempus elit. Curabitur erat elit, ullamcorper non finibus nec, faucibus eu sapien. Aenean vel urna vel odio molestie pharetra. Integer imperdiet sapien at massa convallis, sit amet porta lacus ullamcorper. Nam elit elit, rutrum sodales placerat non, interdum aliquet arcu. Integer turpis metus, feugiat et varius sit amet, rhoncus vitae leo. Phasellus id sapien imperdiet, semper ligula vulputate, tristique quam.
+   </div>
+   <input type="button" value="Volver" onclick="history.back(-1)" />
+   </div>
+    <footer class="footer-basic-centered">
+
+      <p class="footer-company-motto">MANTICLINIC 2016</p>
+
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+        ·
+        <a href="who-we-are.html">Quiénes somos</a>
+        ·
+        <a href="services.html">Servicios</a>
+        ·
+        <a href="contact.html">Otros</a>
+        ·       
+        <a href="contact.html">Contacto</a>
+      </p>
+
+      <p class="footer-company-name">MANTICLINIC &copy; 2016</p>
+
+    </footer>
+
+  </body>
+</html>
